@@ -8,8 +8,9 @@ What is a regex (regular expression)? It is a text pattern that can be used to m
 
 The expression below is an email matching-specific regex. At first look, this expression could seem ovewhelming and difficult to understand, but we will break it down into its component parts for both you and I to better understand.
 
-    /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
-
+```
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+```
 ## Table of Contents
 
 - [Anchors](#anchors)
@@ -28,15 +29,16 @@ There are two ways to create a regex object in Javascript. For this tutorial, we
   There are two characters which are designated to be the anchors of these regex expressions. These characters are ^ and $. They serve the purpose of marking either the start or end of the regex statement respectively.
 
   Let us take a look at our email matching regex.
-
-        /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
-
+```
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+```
   In this example, we see the ^ anchor indicating the start of the expressiong and the $ anchor indicating the end of the statement.
 
   In other words, this regex is searching for a string of text that matches the following pattern.
 
-        ([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})
-
+```
+([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})
+```
 - ### Grouping and Capturing
 
   While some regex expressions are short and straightforward, others are lengthier and considerably more complex. As these expressions become more complex, we might need to verify that these different parts of the string each meet the criteria we are looking for. In order to separate and group our subsections, we would be using parentheses ( ).
